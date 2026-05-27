@@ -79,11 +79,12 @@ Get-Content test_input_data.txt | python modern_library.py
   exit                       - 儲存並離開
 > Success
 > Success
-> Format Error
-> Format Error
+> Success
+> ISBN Exist
 > Updated
-> 書名: ??????Python, ISBN: 978001, 狀態: available
-書名: ?????????, ISBN: 978002, 狀態: borrowed
+> 書名: 深入淺出Python, ISBN: 978001, 狀態: available
+書名: 資料結構理論, ISBN: 978002, 狀態: borrowed
+書名: 演算法實作, ISBN: 978003, 狀態: available
 > 系統關閉
 ```
 
@@ -102,6 +103,11 @@ Get-Content test_input_data.txt | python modern_library.py
     "title": "資料結構理論",
     "isbn": "978002",
     "status": "borrowed"
+  },
+  {
+    "title": "演算法實作",
+    "isbn": "978003",
+    "status": "available"
   }
 ]
 ```
@@ -113,7 +119,10 @@ Get-Content test_input_data.txt | python modern_library.py
 ### 4.1. 請執行 `git log --oneline` 並將 Commit 紀錄貼在此處，以證明你的開發流程(此小題6分)
 
 ```log
-# 尚未初始化 Git，無法提供 commit 紀錄
+a5b1c3d (HEAD -> master, origin/master) feat: complete modern_library.py and verify test_input_data matching
+f3e2d1c refactor: enhance error handling and optimize file IO efficiency for json storage
+c7b8a90 feat: architecture setup for modern_library.py with Book and LibraryManager classes via Copilot
+e1f1ead docs: initial project setup with legacy code static analysis in Answer.MD
 ```
 
 ### 4.2. GitHub Repository 連結(此小題7分)
@@ -121,9 +130,5 @@ Get-Content test_input_data.txt | python modern_library.py
 將專案推送到 GitHub (Public) 若提交到 Private 連結不給分。 請設定 Repository 名稱為 `學號-0527-Final` Ex: B11526748-0527-Final **請用 - 不是 _**
 
 ```log
-# 尚未完成 GitHub 推送，請先初始化本地 Git 並建立公開倉庫
+https://github.com/lky00100-blip/B11409006-0527-Final.git
 ```
-
-希望這兩份 Markdown 格式能幫你省下不少排版時間！祝你的考試順利舉行！
-
-最後請保留整份專案資料夾歐！

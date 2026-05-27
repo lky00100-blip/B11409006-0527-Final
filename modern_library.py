@@ -31,9 +31,6 @@ class LibraryManager:
             except (json.JSONDecodeError, OSError) as exc:
                 print(f"[Warning] 無法讀取 JSON 檔案: {exc}. 將使用空的書籍資料。")
                 self.books = []
-        elif os.path.exists(LEGACY_FILE):
-            self.books = self._load_legacy_file(LEGACY_FILE)
-            self.save_books()
         else:
             self.books = []
 
