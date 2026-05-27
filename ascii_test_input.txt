@@ -1,0 +1,5 @@
+add IntroPython/978100/available
+add DataStructure/978101/available
+borrow 978100
+show
+exit

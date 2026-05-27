@@ -1,0 +1,12 @@
+[
+  {
+    "title": "深入淺出Python",
+    "isbn": "978001",
+    "status": "available"
+  },
+  {
+    "title": "資料結構理論",
+    "isbn": "978002",
+    "status": "borrowed"
+  }
+]
